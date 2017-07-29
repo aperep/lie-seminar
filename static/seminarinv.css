@@ -1,0 +1,138 @@
+body {
+	margin-left:		15%;
+	margin-right: 		15%;
+	padding-top: 		0px !important;
+	margin-top: 		0 !important;
+}
+
+@media screen and (max-width: 767px) {
+	body{ margin: 0; }
+}
+
+
+header {
+	text-align: 		center; 
+	vertical-align: 	middle;
+	color: 				rgb(0, 102, 153);
+	width: 				100%; 		
+	background-color: 	rgb(255, 255, 255); 
+	border-bottom: 		1px solid darkgray;
+	margin-top: 		0px;
+}
+
+header > img {
+	display:			block;
+	float:				left;
+	width: 				150px; 
+	height: 			150px; 
+	margin:				0px;
+	padding: 			4px;
+}
+
+header > div {
+	padding-top:		1em;
+	margin-left:		150px;
+}
+
+header:after {
+    content: 			'';
+    display: 			block;
+    clear: 				both;
+}
+
+
+#nav {
+  width: 135px;
+  float: left;
+  font-size: 1.1em;
+}
+#nav ul { list-style-type: none; }
+#nav li { margin: 0 0 5px 0; }
+#content {
+  margin-left: 135px;
+}
+#content p { text-align : justify; }
+
+.clear {
+  clear: both;
+}
+
+.nav {
+	float:				left;
+	color: 				rgb(0, 102, 153);
+}
+
+
+.seminar-name {
+	color:				rgb(51, 0, 51);
+	font-family:		Georgia;
+	font-size:			12pt;
+	text-align:			center;
+	margin-top:			1em;
+	padding-bottom:		1em;
+	border-bottom:		1px solid darkgray;
+}
+
+
+
+
+.prev-next-link {
+	color:				rgb(0, 102, 153);
+	font-family:		Georgia;
+	font-size:			10pt;
+}
+
+.talk-date {
+	color:				rgb(204, 0, 0);
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+.speaker-name {
+	color:				rgb(0, 102, 153);
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+.organisation-name {
+	color:				rgb(0, 102, 153);
+	font-family:		Georgia;
+	font-size:			9pt;
+	font-style:			italic;
+}
+
+.talk-title {
+	color:				rgb(204, 0, 0);
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+.talk-title-summary {
+	color:				black;
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+.announcement {
+	color:				black;
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+.summary-page-title {
+	color:				rgb(204, 0, 0);
+	font-family:		Georgia;
+	font-size:			14pt;
+}
+
+.plain {
+	color:				black;
+	font-family:		Georgia;
+	font-size:			12pt;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:				rgb(0, 102, 153);
+	font-family:		Georgia;
+	text-decoration:	underline;
+}
