@@ -1,7 +1,7 @@
 languageCode = "ru-ru"
 defaultContentLanguage = "ru"
 title = "Семинар «Группы Ли и теория инвариантов»"
-baseURL = "http://halgebra.math.msu.su/"
+baseURL = "http://lie.netlify.com/"
     
 
 [taxonomies]
