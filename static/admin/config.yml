@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: aperep/vinberg-algorithm # Path to your Github repository
+  repo: aperep/lie-seminar # Path to your Github repository
   branch: master # Branch to update (master by default)
 
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
@@ -11,14 +11,16 @@ publish_mode: editorial_workflow
 collections: # A list of collections the CMS should be able to edit
   - name: "2017-2018" # Used in routes, e.g., /admin/collections/:slug/edit
     label: "2017-2018" # Used in the UI, e.g., "New Post"
-    folder: "content/talk/2017-2018/" # The path to the folder where the documents are stored
+    folder: "content/talk/2017-2018" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    extension: "md"
     fields: # The fields each document in this collection have
       - {label: "Название", name: "talk_title", widget: "string", tagname: "h1"}
       - {label: "Аннотация", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Foo", name: "foo", widget: "foo"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "acad.year", name: "acadyear", widget: "hidden", default: "2017-2018"}
 
 #      - {label:"Дата доклада", name:"display_date", widget:"date"}
 #      - {label: "Докладчик", name: "speaker", widget: "string"}
