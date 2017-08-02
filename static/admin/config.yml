@@ -3,8 +3,8 @@ backend:
   repo: aperep/vinberg-algorithm
   branch: master
 
-# media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
-# public_folder: "/img
+media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img
 
 publish_mode: editorial_workflow
 
