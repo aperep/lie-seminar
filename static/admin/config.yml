@@ -18,6 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Аннотация", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Foo", name: "foo", widget: "foo"}
+      - {label: "Title", name: "title", widget: "string"}
 
 #      - {label:"Дата доклада", name:"display_date", widget:"date"}
 #      - {label: "Докладчик", name: "speaker", widget: "string"}
