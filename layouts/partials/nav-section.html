@@ -1,10 +1,18 @@
+{{$home := .Site.Home}}
 <ul>
-{{ range .Sections}}
+{{ range $home.Sections}}
 <li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
-     {{ partial "nav-section" . }}
+     <ul>
+        {{ range .Sections}}
+        <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+        {{end}}
+        {{ range .Pages}}
+        <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+        {{end}}
+     </ul>
 </li>
 {{ end }}
-{{ range where .Pages "Section" .Section }}
+{{ range where $home.Pages "Section" "" }}
 <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
 {{ end }}
 </ul>

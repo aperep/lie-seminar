@@ -6,5 +6,9 @@
 {{range .Site.Pages}}<br/>
 {{.Title}}
 {{printf "in section %#v" .Section}}
+{{printf "has sections"}} {{range .Sections}}{{.Title}}{{end}}
 {{end}}
+
+{{printf "%#v" .Page.Params.sections}}
+{{printf "%#v" .Sections}}
 -->
