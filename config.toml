@@ -2,7 +2,8 @@ languageCode = "ru-ru"
 defaultContentLanguage = "ru"
 title = "Семинар «Группы Ли и теория инвариантов»"
 baseURL = "http://lie.netlify.com/"
-    
+
+sectionPagesMenu = "main"    
 
 [taxonomies]
 	academic_year = "academic_year"

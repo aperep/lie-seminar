@@ -1,7 +1,6 @@
 +++
 date = "2017-03-02T09:29:23+03:00"
-title = "_index"
-draft = true
+title = "Библиотека"
 
 +++
 

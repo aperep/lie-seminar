@@ -1,0 +1,10 @@
+<ul>
+{{ range .Sections}}
+<li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
+     {{ partial "nav-section" . }}
+</li>
+{{ end }}
+{{ range where .Pages "Section" .Section }}
+<li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
+{{ end }}
+</ul>

@@ -1,6 +1,5 @@
 +++
 title = "История"
-draft = true
 date = "2017-03-02T09:27:54+03:00"
 menu = "main"
 +++

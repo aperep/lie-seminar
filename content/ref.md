@@ -1,7 +1,6 @@
 +++
 date = "2017-03-02T09:31:32+03:00"
 title = "Ссылки"
-draft = true
 menu = "main"
 +++
 

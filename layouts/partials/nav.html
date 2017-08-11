@@ -18,28 +18,6 @@
         </li>
       {{end}}
 
-          <li> Архив 
-                <ul>
-          {{ range $key, $value := .Site.Taxonomies.academic_year }}
-{{printf "%#v" .}}
-           {{ $key }} 
-
-                {{ range $value.Pages }}
-                    <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                {{ end }}
-          {{ end }}
-                </ul> 
-                <ul>
-                {{ range (.Site.Taxonomies.academic_year) }}
-                    <li class="pure-menu-item">
-                    <a class="pure-menu-link" href="/talk/{{ . }}"> {{.}} </a>
-                    {{printf "%#v" .}}
-                    </li>
-
-                {{ end }}
-                </ul>
-          </li>
-
     </ul>
   </div> 
 
