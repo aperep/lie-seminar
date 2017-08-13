@@ -4,6 +4,7 @@ title = "Зарубежная"
 
 +++
 
+
 <table style="text-align: left; width: 79%;" border="0" cellpadding="2"
  cellspacing="2">
   <tbody>
@@ -13,8 +14,9 @@ title = "Зарубежная"
       <td style="vertical-align: top;"><br>
       </td>
       <td
- style="vertical-align: top; font-family: Georgia; width: 40%; text-align: right;"><a
- href="booklist.html">книги на русском языке</a><br>
+ style="vertical-align: top; font-family: Georgia; width: 40%; text-align: right;">
+<a href="/biblio/russian/">книги на русском языке</a>
+<br>
       <br>
       </td>
     </tr>

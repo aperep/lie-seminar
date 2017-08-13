@@ -1,13 +1,17 @@
 
 #nav {
-  width: 135px;
+  width: 140px;
   float: left;
   font-size: 1.1em;
+  height: 100%;
+  margin-top: 10px;
 }
-#nav ul { list-style-type: none; }
-#nav li { margin: 0 0 5px 0; }
+#nav ul { list-style-type: none; padding: 0; margin: 0; }
+#nav li { margin: 0 0 5px 0;}
+#nav li li {font-size: 0.8em; margin-left: 10px; margin-top: 5px;}
+.active {}
 #content {
-  margin-left: 135px;
+  margin-left: 140px;
 }
 #content p { text-align : justify; }
 

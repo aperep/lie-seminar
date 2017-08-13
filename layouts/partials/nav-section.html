@@ -2,7 +2,7 @@
 {{$current := .}}
 <ul>
 <li><a href="{{ .Site.Home.RelPermalink }}">Главная</a></li>
-{{ range $home.Sections}}
+{{ range $home.Sections.ByDate}}
 <li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
 {{ if eq $current.Section .File.Section}}
      <ul>
@@ -16,7 +16,7 @@
 {{ end }}
 </li>
 {{ end }}
-{{ range where $home.Pages "Section" "" }}
+{{ range (where $home.Pages.ByDate "Section" "") }}
 <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
 {{ end }}
 </ul>

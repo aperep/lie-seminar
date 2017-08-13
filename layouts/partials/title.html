@@ -1,0 +1,8 @@
+{{if ( isset .Params "redtitle" | or (isset .Params "subtitle") ) }}
+
+<div class="page-title">
+{{with .Params.Redtitle}}<span class="red">{{.}}</span><br/>{{end}}
+{{with .Params.Subtitle}}<span style="font-size:12pt;">{{.|safeHTML}}</span>{{end}}
+</div>
+
+{{end}}

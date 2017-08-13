@@ -1,5 +1,8 @@
 {{define "content"}}
-<h1>Заседания семинара в {{.Title}} учебном году</h1>
+
+<div class="page-title">Заседания семинара в {{.Title}} учебном году</div>
+  
+
 <ul>
 {{ range .Data.Pages }}
     {{ .Render "li"}}

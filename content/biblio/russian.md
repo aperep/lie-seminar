@@ -12,8 +12,9 @@ title = "Русская"
       <td style="vertical-align: top;"><br>
       </td>
       <td
- style="vertical-align: top; font-family: Georgia; width: 40%; text-align: right;"><a
- href="booklist-2.html">книги на других языках</a><br>
+ style="vertical-align: top; font-family: Georgia; width: 40%; text-align: right;">
+<a href="/biblio/foreign/">книги на других языках</a>
+<br>
       <br>
       </td>
     </tr>
