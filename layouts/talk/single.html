@@ -1,30 +1,14 @@
 {{define "content"}}
 
-<table style="text-align: left; width: 79%;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-   
- <tr>
-      <td style="text-align: left; vertical-align: top; width: 30%;">
-			<span class="prev-next-link"><a href="./23-11-2016.html">предыдущий анонс</a></span>
-      </td>
-   
-   <td style="text-align: center; vertical-align: top; width: 40%">
+{{with .PrevInSection}} <a href="{{.RelPermalink}}" class="prev-link">предыдущий анонс</a> {{end}}
+{{with .NextInSection}} <a href="{{.RelPermalink}}" class="next-link">следующий анонс</a> {{end}}
       
-  <span class="talk-date">30 ноября 2016 г.</span>
-      </td>
-      <td style="text-align: right; vertical-align: top; width: 30%">
-			<span class="prev-next-link"><a href="./07-12-2016.html">следующий анонс</a></span>
-      </td>
-    </tr>
-    <tr>
-    
-  <td colspan="3" rowspan="1" style="vertical-align: top;">
-      <div style="text-align: center;">
-  
-      <span class="speaker-name">А.Д. Бережной</span>
+  <span class="talk-date">{{partial "date-ru" .}}</span>
+{{with .Params.speaker}}   <span class="speaker-name">{{.}}</span>{{end}}
+
       <br />
     
-  <span class="talk-title">Классификация линейных отображений векторных пространств со скалярным умножением</span>
+  <span class="talk-title">{{.Title}}</span>
       <br /><br />
       </div>
   
@@ -32,10 +16,6 @@
 {{.Content}}
 </div>
       <br />
-      <span class=""><a href="../2016-2017.html">список заседаний 2016&ndash;2017</span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!--      <span class=""><a href="../2016-2017.html">список заседаний 2016&ndash;2017</span> -->
 
 {{end}}

@@ -1,7 +1,10 @@
 {{$home := .Site.Home}}
+{{$current := .}}
 <ul>
+<li><a href="{{ .Site.Home.RelPermalink }}">Главная</a></li>
 {{ range $home.Sections}}
 <li><a href="{{ .RelPermalink}}">{{ .Title }}</a>
+{{ if eq $current.Section .File.Section}}
      <ul>
         {{ range .Sections}}
         <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
@@ -10,6 +13,7 @@
         <li><a href="{{ .RelPermalink}}">{{ .Title }}</a></li>
         {{end}}
      </ul>
+{{ end }}
 </li>
 {{ end }}
 {{ range where $home.Pages "Section" "" }}

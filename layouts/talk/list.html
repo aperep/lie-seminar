@@ -1,3 +1,8 @@
 {{define "content"}}
-Hello!
+<h1>Заседания семинара в {{.Title}} учебном году</h1>
+<ul>
+{{ range .Data.Pages }}
+    {{ .Render "li"}}
+{{ end }}
+</ul>
 {{end}}
