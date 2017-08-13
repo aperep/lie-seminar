@@ -1,11 +1,13 @@
 {{define "content"}}
 
-<div class="page-title">Заседания семинара в {{.Title}} учебном году</div>
-  
+{{partial "title" .}}  
 
+
+{{if gt (len .Data.Pages) 0 }}
 <ul>
 {{ range .Data.Pages }}
     {{ .Render "li"}}
 {{ end }}
 </ul>
+{{end}}
 {{end}}

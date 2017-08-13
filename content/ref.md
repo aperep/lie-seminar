@@ -13,5 +13,5 @@ menu = "main"
 
 [Школы-конференции "Алгебры Ли, алгебраические группы и теория инвариантов"](http://halgebra.math.msu.su/alg_conf/main.shtml)  
 
-Конференция, посвященная 70-летию Э.Б. Винберга [Transformation Groups](http://www.mccme.ru/tg2007/)
+
 
