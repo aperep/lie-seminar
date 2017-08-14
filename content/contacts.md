@@ -13,5 +13,6 @@ menu = "main"
 
 Дмитрий Андреевич Тимашев [timashev@mccme.ru](mailto:timashev@mccme.ru)
 
-По вопросам, связанным с сайтом и рассылкой семинара, обращайтесь по адресу [seminarinv@yandex.ru](mailto:seminarinv@yandex.ru)
+По вопросам, связанным с сайтом и рассылкой семинара, обращайтесь по адресу [seminarinv@yandex.ru](mailto:seminarinv@yandex.ru),
+исходный код сайта расположен на https://github.com/aperep/lie-seminar
 
