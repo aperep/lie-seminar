@@ -1,0 +1,12 @@
+{{range .Site.Data.schools.schools}}<div style="margin-bottom: 10pt;">
+
+<span class="red"> 
+{{with .display_date}} {{.}} {{end}}
+({{with .startdate}} {{.}} {{end}} - {{with .enddate}} {{.}} {{end}} )
+</span>
+{{.speaker}}<br/>
+{{.kind}}<br/>
+{{.link | markdownify}}<br/>
+{{.place}}<br/>
+
+</div>{{end}}

@@ -1,1 +1,5 @@
+{{if eq .Date.Day 0}}
+{{ index $.Site.Data.month_infinitive (printf "%d" .Date.Month) }} {{ .Date.Year }} г.
+{{else}}
 {{ .Date.Day }} {{ index $.Site.Data.month (printf "%d" .Date.Month) }} {{ .Date.Year }} г.
+{{end}}
