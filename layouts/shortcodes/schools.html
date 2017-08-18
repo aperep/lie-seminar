@@ -1,5 +1,25 @@
-{{range .Site.Data.schools.schools}}<div style="margin-bottom: 10pt;">
 
+{{$schools := sort .Site.Data.schools.schools "enddate"}}
+
+
+{{if .Get 0 }}
+    {{if eq (.Get 0) "past"}}
+        {{range (sort $schools "enddate" "desc")}}
+           {{if now.After (time .enddate)}} {{template "school" .}} {{end}} 
+        {{end}}
+    {{else}}
+        {{range (sort $schools "enddate" "asc")}}
+           {{if now.Before (time .enddate)}} {{template "school" .}} {{end}} 
+        {{end}}
+    {{end}}
+{{else}}
+    {{range $schools}} {{template "school" .}} {{end}}
+{{end}}
+
+
+
+{{define "school"}}
+<div style="margin-bottom: 10pt;">
 <span class="red"> 
 {{with .display_date}} {{.}} {{end}}
 ({{with .startdate}} {{.}} {{end}} - {{with .enddate}} {{.}} {{end}} )
@@ -8,5 +28,5 @@
 {{.kind}}<br/>
 {{.link | markdownify}}<br/>
 {{.place}}<br/>
-
-</div>{{end}}
+</div>
+{{end}}
